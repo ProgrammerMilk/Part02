@@ -149,6 +149,7 @@ public class SearchByArtistPrefix {
           */
         
         
+        //7.  ******* one more bug i experienced is when i searched with all lowercase or Upper case input, it won't work 
         
         // Searching result by the artist prefixes.
         Song[] result = searcher.search("Pro");
