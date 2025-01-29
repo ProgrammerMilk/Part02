@@ -53,9 +53,9 @@ public class SearchByArtistPrefix {
         // If the search doesn't find the exact match, it return 0.
         
         //  1. ***** = > would it be better to have a else statement to 
-        //  avoid "index out of bound" error when if it's true? *****
+        //  avoid "index out of bound" error when if it's true? 
+        //  for now, if index < 0, the following  "while" statements will still run *****
         
-        //  for now, if index < 0, the foloowing "while" statements will still run
         if (index < 0) { 
             // if not found, calculate the position that would be inserted at.
             index = -index - 1;
@@ -77,7 +77,7 @@ public class SearchByArtistPrefix {
             index++;
         }
         
-        // 3. ****** this jav doc might need to update , it's duplcated with the above one
+        // 3. ****** this jav doc might need to update , it's duplcated with the above one ****
         
         // Look in the right direction to see if there is an exact match.
         index--;
@@ -145,11 +145,11 @@ public class SearchByArtistPrefix {
          *  also in instruction: 
           * Finish the testing method by printing the to- tal number of matches 
           * as well as the Artist and Title of the first 10 matches. 
-          * You can reuse your code from part 1 section 3.2 to do this.
+          * You can reuse your code from part 1 section 3.2 to do this. *******
           */
         
         
-        //7.  ******* one more bug i experienced is when i searched with all lowercase or Upper case input, it won't work 
+        //7.  ******* one more bug i experienced is when i searched with all lowercase or Upper case input, it won't work ****
         
         // Searching result by the artist prefixes.
         Song[] result = searcher.search("Pro");
